@@ -10,7 +10,6 @@
     bottom=2.54cm
 ]{geometry}
 \usepackage{fancyhdr}
-\usepackage{subcaption}
 
 \pagestyle{fancy}
 
@@ -28,11 +27,18 @@
 \numberwithin{figure}{section}
 
 \usepackage{caption}
-\usepackage{subcaption}
 \captionsetup{labelsep=colon,labelfont={footnotesize,bf},textfont={footnotesize,normalfont}}
 \usepackage{hyperref}
 \usepackage{cleveref}
 \crefname{figure}{figure}{figures}
 \Crefname{figure}{Figure}{Figures}
-
+\usepackage{bookmark}
+\usepackage{csquotes}
+\usepackage[
+    backend=biber,
+    style=numeric,
+    language=auto
+]{biblatex}
+\usepackage[table,xcdraw]{xcolor}
+\addbibresource{references.bib}
 
